@@ -1,0 +1,181 @@
+
+    feature pnum {
+        sub A by tag_pnum;
+        } pnum;
+    
+    feature onum {
+        sub B by tag_onum;
+        } onum;
+    
+    feature tnum {
+        sub C by tag_tnum;
+        } tnum;
+    
+    feature lnum {
+        sub D by tag_lnum;
+        } lnum;
+    
+    feature liga {
+        sub E by tag_liga;
+        } liga;
+    
+    feature dlig {
+        sub F by tag_dlig;
+        } dlig;
+    
+    feature hlig {
+        sub G by tag_hlig;
+        } hlig;
+    
+    feature case {
+        sub H by tag_case;
+        } case;
+    
+    feature cpsp {
+        sub I by tag_cpsp;
+        } cpsp;
+    
+    feature smcp {
+        sub J by tag_smcp;
+        } smcp;
+    
+    feature c2sc {
+        sub K by tag_c2sc;
+        } c2sc;
+    
+    feature sups {
+        sub L by tag_sups;
+        } sups;
+    
+    feature sinf {
+        sub M by tag_sinf;
+        } sinf;
+    
+    feature subs {
+        sub N by tag_subs;
+        } subs;
+    
+    feature ordn {
+        sub O by tag_ordn;
+        } ordn;
+    
+    feature titl {
+        sub P by tag_titl;
+        } titl;
+    
+    feature swsh {
+        sub Q by tag_swsh;
+        } swsh;
+    
+    feature cswh {
+        sub R by tag_cswh;
+        } cswh;
+    
+    feature aalt {
+        sub S by tag_aalt;
+        } aalt;
+    
+    feature calt {
+        sub T by tag_calt;
+        } calt;
+    
+    feature clig {
+        sub U by tag_clig;
+        } clig;
+    
+    feature frac {
+        sub V by tag_frac;
+        } frac;
+    
+    feature afrc {
+        sub W by tag_afrc;
+        } afrc;
+    
+    feature numr {
+        sub X by tag_numr;
+        } numr;
+    
+    feature dnom {
+        sub Y by tag_dnom;
+        } dnom;
+    
+    feature ornm {
+        sub Z by tag_ornm;
+        } ornm;
+    
+    feature salt {
+        sub a by tag_salt;
+        } salt;
+    
+    feature ss01 {
+        sub b by tag_ss01;
+        } ss01;
+    
+    feature hist {
+        sub c by tag_hist;
+        } hist;
+    
+    feature zero {
+        sub d by tag_zero;
+        } zero;
+    
+    feature jalt {
+        sub e by tag_jalt;
+        } jalt;
+    
+    feature nalt {
+        sub f by tag_nalt;
+        } nalt;
+    
+    feature mgrk {
+        sub g by tag_mgrk;
+        } mgrk;
+    
+    feature pcap {
+        sub h by tag_pcap;
+        } pcap;
+    
+    feature c2pc {
+        sub i by tag_c2pc;
+        } c2pc;
+    
+    feature unic {
+        sub j by tag_unic;
+        } unic;
+    
+    feature ccmp {
+        sub k by tag_ccmp;
+        } ccmp;
+    
+    feature rlig {
+        sub l by tag_rlig;
+        } rlig;
+    
+    feature mark {
+        sub m by tag_mark;
+        } mark;
+    
+    feature mkmk {
+        sub n by tag_mkmk;
+        } mkmk;
+    
+    feature mset {
+        sub o by tag_mset;
+        } mset;
+    
+    feature fina {
+        sub p by tag_fina;
+        } fina;
+    
+    feature init {
+        sub q by tag_init;
+        } init;
+    
+    feature isol {
+        sub r by tag_isol;
+        } isol;
+    
+    feature medi {
+        sub s by tag_medi;
+        } medi;
+    

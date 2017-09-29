@@ -1,0 +1,94 @@
+Web Fonts:
+**********
+
+OTTestFont-Regular.ufo
+----------------------
+source: /Users/david/Documents/Tools/font-variant-wut/fonts/OTTestFont-Regular.ufo
+
+Build WOFF (TTF)
+''''''''''''''''
+    path: /Users/david/Documents/Tools/font-variant-wut/fonts/OT_Test_Font-Regular.woff
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        makeotf [Note] Writing options file current.fpr
+        makeotf [Note] Running makeotfexe with commands:
+           cd ""
+           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpyE8Lhb.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+        makeotfexe [WARNING] <OTTestFont-Regular> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 2]
+        makeotfexe [WARNING] <OTTestFont-Regular> Major version number not in range 1 .. 255 [features 199]
+        makeotfexe [NOTE] Wrote new font file 'tmpyE8Lhb.ttf'.
+        
+        
+        Built release mode font 'tmpyE8Lhb.ttf' Revision 0.000
+        
+        --------------------
+
+
+src.ufo
+-------
+source: /Users/david/Documents/Tools/font-variant-wut/scripts/src.ufo
+
+Build WOFF (TTF)
+''''''''''''''''
+    path: /Users/david/Documents/Tools/font-variant-wut/fonts/Bungee-Regular.woff
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        makeotf [Note] Writing options file current.fpr
+        makeotf [Note] Running makeotfexe with commands:
+           cd ""
+           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpxbbEoJ.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+        makeotfexe [FATAL] <Bungee-Regular> include file </Users/david/Documents/Tools/font-variant-wut/scripts/features/classes.fea> not found [features 2]
+        
+        makeotf [Error] Failed to build output font file 'tmpxbbEoJ.ttf'.
+        None
+        
+        Traceback (most recent call last):
+          File "/Applications/FontApps/RoboFont.app/Contents/Resources/lib/python2.7/fontCompiler/tools/compileTools.py", line 258, in _executeCommand
+          File "/Applications/FontApps/RoboFont.app/Contents/Resources/lib/python2.7/fontCompiler/tools/compileTools.py", line 297, in embedded_makeotf
+          File "MakeOTF.py", line 2509, in runMakeOTF
+        MakeOTFRunError
+        
+        --------------------
+        Failed:
+        Traceback (most recent call last):
+          File "/Users/david/Library/Application Support/RoboFont/plugins/Batch.roboFontExt/lib/webFormats/__init__.py", line 557, in run
+          File "/Users/david/Library/Application Support/RoboFont/plugins/Batch.roboFontExt/lib/webFormats/__init__.py", line 437, in _convertPath
+          File "/Users/david/Library/Application Support/RoboFont/plugins/Batch.roboFontExt/lib/webFormats/__init__.py", line 330, in _getTempTTF
+          File "/Users/david/Library/Application Support/RoboFont/plugins/Batch.roboFontExt/lib/webFormats/__init__.py", line 137, in generateTTF
+          File "/Users/david/Library/Application Support/RoboFont/plugins/Batch.roboFontExt/lib/webFormats/autohint.py", line 94, in TTFAutohint
+          File "/Applications/FontApps/RoboFont.app/Contents/Resources/lib/python2.7/fontTools/ttLib/__init__.py", line 180, in __init__
+          File "/Applications/FontApps/RoboFont.app/Contents/Resources/lib/python2.7/fontTools/ttLib/sfnt.py", line 84, in __init__
+        TTLibError: Not a TrueType or OpenType font (not enough data)
+        
+
+
+TTFAutohint options:
+********************
+addTTFAutoHintInfo     = False
+dwClearType            = False
+fallbackScript         = False
+gdiClearType           = True
+grayScale              = False
+hintRangeMaximum       = 50
+hintRangeMinimum       = 8
+hintingLimit           = 200
+noHintingLimit         = False
+noXHeightIncreaseLimit = False
+overRideFontLicense    = False
+preHinting             = False
+symbolFont             = False
+xHeightIncreaseLimit   = 14
