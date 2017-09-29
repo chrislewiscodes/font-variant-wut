@@ -273,9 +273,53 @@
 		<string>registered</string>
 		<string>degree</string>
 		<string>paragraph</string>
-		<string>space</string>
 		<string>guillemotleft</string>
 		<string>guillemotright</string>
+		<string>tag_aalt</string>
+		<string>tag_afrc</string>
+		<string>tag_c2pc</string>
+		<string>tag_c2sc</string>
+		<string>tag_calt</string>
+		<string>tag_case</string>
+		<string>tag_ccmp</string>
+		<string>tag_clig</string>
+		<string>tag_cpsp</string>
+		<string>tag_cswh</string>
+		<string>tag_dlig</string>
+		<string>tag_dnom</string>
+		<string>tag_fina</string>
+		<string>tag_frac</string>
+		<string>tag_hist</string>
+		<string>tag_hlig</string>
+		<string>tag_init</string>
+		<string>tag_isol</string>
+		<string>tag_jalt</string>
+		<string>tag_liga</string>
+		<string>tag_lnum</string>
+		<string>tag_mark</string>
+		<string>tag_medi</string>
+		<string>tag_mgrk</string>
+		<string>tag_mkmk</string>
+		<string>tag_mset</string>
+		<string>tag_nalt</string>
+		<string>tag_numr</string>
+		<string>tag_onum</string>
+		<string>tag_ordn</string>
+		<string>tag_ornm</string>
+		<string>tag_pcap</string>
+		<string>tag_pnum</string>
+		<string>tag_rlig</string>
+		<string>tag_salt</string>
+		<string>tag_sinf</string>
+		<string>tag_smcp</string>
+		<string>tag_ss01</string>
+		<string>tag_subs</string>
+		<string>tag_sups</string>
+		<string>tag_swsh</string>
+		<string>tag_titl</string>
+		<string>tag_tnum</string>
+		<string>tag_unic</string>
+		<string>tag_zero</string>
 	</array>
 </dict>
 </plist>
