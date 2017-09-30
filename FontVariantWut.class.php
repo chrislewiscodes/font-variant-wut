@@ -3,6 +3,7 @@ namespace FontVariantWut;
 
 class FontVariantWut {
     public $allfeatures;
+    private $whichfont = "tags";
 
     public $tests = array(
         "font-variant-alternates" => array(
@@ -34,7 +35,7 @@ class FontVariantWut {
     }
 
     public function atFontFace($base64=false) {
-        $url = "fonts/test.woff";
+        $url = "fonts/{$this->whichfont}.woff";
         if ($base64) {
             $url = "data:application/font-woff;base64," . base64_encode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/' . $url));
         }
@@ -48,16 +49,38 @@ class FontVariantWut {
 EOF;
     }
 
-    public function getTestString($features) {
-        if (is_array($features)) {
-            return implode("\n", $features);
+    public function useBlockFont() {
+        $this->whichfont = "block";
+    }
+    
+    public function useTagFont() {
+        $this->whichfont = "tags";
+    }
+
+    public function ruleColor($rule) {
+        return '#' . substr(md5($rule), 0, 6);
+    }
+
+    public function featuresForRule($rule) {
+        $test = $this->tests[$rule]['features'];
+        if (is_array($test)) {
+            return $test;
         } else {
             $result = array();
             foreach ($this->allfeatures as $f) {
-                if (preg_match('/' . $features . '/', $f)) {
+                if (preg_match('/' . $test . '/', $f)) {
                     $result[] = $f;
                 }
             }
+            return $result;
+        }
+    }
+
+    public function getTestString($rule) {
+        $result = $this->featuresForRule($rule);
+        if ($this->whichfont === "block") {
+            return implode("", $result);
+        } else {
             return implode("\n", $result);
         }
     }

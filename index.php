@@ -81,10 +81,6 @@ $tester = new FontVariantWut();
         .no {
             background-color: #f66;
         }
-        
-        svg {
-            border: 1px solid black;
-        }
     </style>
     <script>
         (function() {
@@ -99,11 +95,15 @@ $tester = new FontVariantWut();
                 return context.measureText("a").width === 0;
             }
 
+/*
             var interval;
             interval = setInterval(function() {
                 if (!fontAvailable()) return;
                 clearInterval(interval);
+            }, 100);
+*/
 
+            document.addEventListener('DOMContentLoaded', function() {
                 var img = document.createElement('img');
                 img.addEventListener('load', function() {
                     canvas.width = this.naturalWidth;
@@ -113,9 +113,7 @@ $tester = new FontVariantWut();
                 });
                 img.src = "test-svg.php";
                 document.body.appendChild(img);
-
-            }, 100);
-            
+            });
         })();
     </script>
 </head>
@@ -138,9 +136,9 @@ $tester = new FontVariantWut();
                 <?php endforeach; ?>
             </tr>
             <tr>
-                <td class='test' style='<?= $rule ?>:initial' data-rule='<?= $rule ?>' data-value='initial'><?= $tester->getTestString($info['features']) ?></td>
+                <td class='test' style='<?= $rule ?>:initial' data-rule='<?= $rule ?>' data-value='initial'><?= $tester->getTestString($rule) ?></td>
                 <?php foreach ($info['values'] as $value): ?>
-                <td class='test' style='<?= $rule ?>:<?= $value ?>' data-rule='<?= $rule ?>' data-value='<?= $value ?>'><?= $tester->getTestString($info['features']) ?></td>
+                <td class='test' style='<?= $rule ?>:<?= $value ?>' data-rule='<?= $rule ?>' data-value='<?= $value ?>'><?= $tester->getTestString($rule) ?></td>
                 <?php endforeach; ?>
             </tr>
         <?php endforeach; ?>
