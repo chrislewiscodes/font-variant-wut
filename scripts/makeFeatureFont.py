@@ -24,9 +24,10 @@ for i, tag in enumerate(tags):
     g = f[gname]
     p = g.getPen()
     p.moveTo((0, f.info.descender-padding))
-    p.lineTo((g.width, f.info.descender-padding))
-    p.lineTo((g.width, f.info.ascender+padding))
     p.lineTo((0, f.info.ascender+padding))
+    p.lineTo((g.width, f.info.ascender+padding))
+    p.lineTo((g.width, f.info.descender-padding))
+
     p.closePath()
 
     f.features.text += """
