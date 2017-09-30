@@ -288,6 +288,8 @@
 				<string>tag_tnum</string>
 				<string>tag_unic</string>
 				<string>tag_zero</string>
+				<string>space</string>
+				<string>tag</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
