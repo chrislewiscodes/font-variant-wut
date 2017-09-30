@@ -1,0 +1,180 @@
+	feature pnum {
+		sub braceleft' p' n' u' m' braceright' by tag;
+} pnum;
+
+	feature onum {
+		sub braceleft' o' n' u' m' braceright' by tag;
+} onum;
+
+	feature tnum {
+		sub braceleft' t' n' u' m' braceright' by tag;
+} tnum;
+
+	feature lnum {
+		sub braceleft' l' n' u' m' braceright' by tag;
+} lnum;
+
+	feature liga {
+		sub braceleft' l' i' g' a' braceright' by tag;
+} liga;
+
+	feature dlig {
+		sub braceleft' d' l' i' g' braceright' by tag;
+} dlig;
+
+	feature hlig {
+		sub braceleft' h' l' i' g' braceright' by tag;
+} hlig;
+
+	feature case {
+		sub braceleft' c' a' s' e' braceright' by tag;
+} case;
+
+	feature cpsp {
+		sub braceleft' c' p' s' p' braceright' by tag;
+} cpsp;
+
+	feature smcp {
+		sub braceleft' s' m' c' p' braceright' by tag;
+} smcp;
+
+	feature c2sc {
+		sub braceleft' c' two' s' c' braceright' by tag;
+} c2sc;
+
+	feature sups {
+		sub braceleft' s' u' p' s' braceright' by tag;
+} sups;
+
+	feature sinf {
+		sub braceleft' s' i' n' f' braceright' by tag;
+} sinf;
+
+	feature subs {
+		sub braceleft' s' u' b' s' braceright' by tag;
+} subs;
+
+	feature ordn {
+		sub braceleft' o' r' d' n' braceright' by tag;
+} ordn;
+
+	feature titl {
+		sub braceleft' t' i' t' l' braceright' by tag;
+} titl;
+
+	feature swsh {
+		sub braceleft' s' w' s' h' braceright' by tag;
+} swsh;
+
+	feature cswh {
+		sub braceleft' c' s' w' h' braceright' by tag;
+} cswh;
+
+	feature aalt {
+		sub braceleft' a' a' l' t' braceright' by tag;
+} aalt;
+
+	feature calt {
+		sub braceleft' c' a' l' t' braceright' by tag;
+} calt;
+
+	feature clig {
+		sub braceleft' c' l' i' g' braceright' by tag;
+} clig;
+
+	feature frac {
+		sub braceleft' f' r' a' c' braceright' by tag;
+} frac;
+
+	feature afrc {
+		sub braceleft' a' f' r' c' braceright' by tag;
+} afrc;
+
+	feature numr {
+		sub braceleft' n' u' m' r' braceright' by tag;
+} numr;
+
+	feature dnom {
+		sub braceleft' d' n' o' m' braceright' by tag;
+} dnom;
+
+	feature ornm {
+		sub braceleft' o' r' n' m' braceright' by tag;
+} ornm;
+
+	feature salt {
+		sub braceleft' s' a' l' t' braceright' by tag;
+} salt;
+
+	feature ss01 {
+		sub braceleft' s' s' zero' one' braceright' by tag;
+} ss01;
+
+	feature hist {
+		sub braceleft' h' i' s' t' braceright' by tag;
+} hist;
+
+	feature zero {
+		sub braceleft' z' e' r' o' braceright' by tag;
+} zero;
+
+	feature jalt {
+		sub braceleft' j' a' l' t' braceright' by tag;
+} jalt;
+
+	feature nalt {
+		sub braceleft' n' a' l' t' braceright' by tag;
+} nalt;
+
+	feature mgrk {
+		sub braceleft' m' g' r' k' braceright' by tag;
+} mgrk;
+
+	feature pcap {
+		sub braceleft' p' c' a' p' braceright' by tag;
+} pcap;
+
+	feature c2pc {
+		sub braceleft' c' two' p' c' braceright' by tag;
+} c2pc;
+
+	feature unic {
+		sub braceleft' u' n' i' c' braceright' by tag;
+} unic;
+
+	feature ccmp {
+		sub braceleft' c' c' m' p' braceright' by tag;
+} ccmp;
+
+	feature rlig {
+		sub braceleft' r' l' i' g' braceright' by tag;
+} rlig;
+
+	feature mark {
+		sub braceleft' m' a' r' k' braceright' by tag;
+} mark;
+
+	feature mkmk {
+		sub braceleft' m' k' m' k' braceright' by tag;
+} mkmk;
+
+	feature mset {
+		sub braceleft' m' s' e' t' braceright' by tag;
+} mset;
+
+	feature fina {
+		sub braceleft' f' i' n' a' braceright' by tag;
+} fina;
+
+	feature init {
+		sub braceleft' i' n' i' t' braceright' by tag;
+} init;
+
+	feature isol {
+		sub braceleft' i' s' o' l' braceright' by tag;
+} isol;
+
+	feature medi {
+		sub braceleft' m' e' d' i' braceright' by tag;
+} medi;
+
