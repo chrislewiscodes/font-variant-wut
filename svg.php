@@ -1,6 +1,14 @@
 <?php
 namespace FontVariantWut;
 
+/*
+    Browser font-variant support tester by Chris Lewis https://chrislewis.codes/
+    Brilliant test font by David Jonathan Ross https://djr.com/
+    
+    Licensed under the MIT License. Code available on GitHub:
+    https://github.com/chrissam42/font-variant-wut
+*/
+
 require_once("./FontVariantWut.class.php");
 
 $tester = new FontVariantWut();
@@ -18,6 +26,16 @@ foreach ($tester->tests as $rule => $info) {
 
 $totalwidth = $square * ($cols + 2);
 $totalheight = $square * $totaltests;
+
+function texts($rule, $value, $y) {
+    global $tester, $square;
+    $x = 0;
+    foreach ($tester->featuresForRule($rule) as $feat) {
+        $x += $square;
+        print "<text x='$x' y='$y' style='$rule:$value'>$feat</text>";
+    }
+    return "";
+}
 
 header("Content-type: image/svg+xml");
 ?>
@@ -40,6 +58,8 @@ header("Content-type: image/svg+xml");
         text {
             font-family: "Font Variant Test";
             font-size: <?= $square ?>px;
+            text-rendering: optimizeLegibility;
+            -ms-font-feature-settings "liga" 1;
         }
         
         text.label {
@@ -50,13 +70,14 @@ header("Content-type: image/svg+xml");
         }
     </style>
 
+    <rect x="0" y="0" width="<?= $totalwidth ?>" height="<?= $totalheight ?>" fill="#ffffff" stroke="none"/>
     <?php $i=0; foreach ($tester->tests as $rule => $info): ?>
         <g class="<?= $rule ?>">
             <rect class="initial <?= $rule ?>" x="0.5" y="<?= $i * $square+0.5 ?>" width="<?= $totalwidth-1 ?>" height="<?= $square-1 ?>"/> 
             <text class="label <?= $rule ?>" x="<?= $totalwidth ?>" y="<?= ($i+0.75) * $square ?>"><?= str_replace('font-variant-', '', $rule) ?></text>
-            <text x="<?= $square ?>" y="<?= ($i+1) * $square ?>" style="<?= $rule ?>:initial"><?= $tester->getTestString($rule) ?></text>
+            <?= texts($rule, 'initial', ($i+1)*$square) ?>
             <?php ++$i; foreach ($info['values'] as $value): ?>
-            <text x="<?= $square ?>" y="<?= ($i+1) * $square ?>" style="<?= $rule ?>:<?= $value ?>"><?= $tester->getTestString($rule) ?></text>
+            <?= texts($rule, $value, ($i+1)*$square) ?>
             <?php ++$i; endforeach; ?>
         </g>
     <?php endforeach; ?>

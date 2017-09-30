@@ -1,6 +1,14 @@
 <?php
 namespace FontVariantWut;
 
+/*
+    Browser font-variant support tester by Chris Lewis https://chrislewis.codes/
+    Brilliant test font by David Jonathan Ross https://djr.com/
+    
+    Licensed under the MIT License. Code available on GitHub:
+    https://github.com/chrissam42/font-variant-wut
+*/
+
 class FontVariantWut {
     public $allfeatures;
     private $whichfont = "tags";
@@ -57,8 +65,18 @@ EOF;
         $this->whichfont = "tags";
     }
 
-    public function ruleColor($rule) {
-        return '#' . substr(md5($rule), 0, 6);
+    public function ruleColor($rule, $format='hex') {
+        $hex = substr(md5($rule), 0, 6);
+        switch ($format) {
+            case 'rgb':
+                return array(
+                    hexdec(substr($hex, 0, 2)),
+                    hexdec(substr($hex, 2, 2)),
+                    hexdec(substr($hex, 4, 2)),
+                );
+            default:
+                return "#$hex";
+        }
     }
 
     public function featuresForRule($rule) {
@@ -76,25 +94,65 @@ EOF;
         }
     }
 
-    public function getTestString($rule) {
+    public function testString($rule) {
         $result = $this->featuresForRule($rule);
         if ($this->whichfont === "block") {
             return implode("", $result);
         } else {
-            return implode("\n", $result);
+            return "<span>" . implode("</span><span>", $result) . "<span>";
         }
     }
     
-    public function getBrowser() {
-        if (preg_match('/MSIE (\d+(?:\.\d+)?)/', $_SERVER['HTTP_USER_AGENT'], $m)) {
-            return "Internet Explorer {$m[1]}";
-        }
-        if (preg_match('~(Firefox|Chrome|Chromium|Safari|OPR|Opera)/(\d+(?:\.\d+))~', $_SERVER['HTTP_USER_AGENT'], $m)) {
-            if ($m[1] === 'OPR') {
-                $m[1] = 'Opera';
+    public function browser() {
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        
+        $b = "Unknown";
+        $p = "Unknown";
+        $v = "";
+        if (preg_match('/MSIE (\d+(?:\.\d+)?)/', $ua, $m)) {
+            $p = "Windows";
+            $b = "Internet Explorer";
+            $v = $m[1];
+        } else if (preg_match(':Trident/\d+:', $ua) and preg_match('/v:(\d+(?:\.\d+))/', $ua, $m)) {
+            $p = "Windows";
+            $b = "Internet Explorer";
+            $v = $m[1];
+        } else {
+            foreach (explode('|', 'CriOS|Edge|Firefox|Chrome|Chromium|Safari|OPR|Opera') as $try) {
+                if (preg_match('~' . $try . '/(\d+(?:\.\d+))~', $ua, $m)) {
+                    $b = $try;
+                    $v = $m[1];
+                    switch ($b) {
+                        case 'OPR': $b = 'Opera'; break;
+                        case 'CriOS': $p = "iOS"; $b = 'Chrome'; break;
+                        case 'Safari':
+                    }
+                    break;
+                }
             }
-            return "{$m[1]} {$m[2]}";
         }
-        return "Unknown";
+
+        if (preg_match(':Version/([\d\.]+):', $ua, $m)) {
+            $v = $m[1];
+        }
+        
+        if ($p === "Unknown") {
+            if (preg_match('/Android/', $ua)) {
+                $p = 'Android';
+            } else if (preg_match('/Windows NT/', $ua)) {
+                $p = 'Windows';
+            } else if (preg_match('/iPhone OS \d+/', $ua)) {
+                $p = 'iOS';
+            } else if (preg_match('/Mac OS X/', $ua)) {
+                $p = 'Mac';
+            }
+        }
+        
+        return array(
+            'platform' => $p, 
+            'browser' => $b, 
+            'version' => $v,
+            'userAgent' => $_SERVER['HTTP_USER_AGENT'],
+        );
     }
 }
