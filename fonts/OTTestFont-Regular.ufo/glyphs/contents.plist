@@ -4,114 +4,342 @@
 <dict>
 	<key>A</key>
 	<string>A_.glif</string>
+	<key>A.t</key>
+	<string>A_.t.glif</string>
 	<key>B</key>
 	<string>B_.glif</string>
+	<key>B.t</key>
+	<string>B_.t.glif</string>
 	<key>C</key>
 	<string>C_.glif</string>
+	<key>C.t</key>
+	<string>C_.t.glif</string>
 	<key>D</key>
 	<string>D_.glif</string>
+	<key>D.t</key>
+	<string>D_.t.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
+	<key>E.t</key>
+	<string>E_.t.glif</string>
 	<key>F</key>
 	<string>F_.glif</string>
+	<key>F.t</key>
+	<string>F_.t.glif</string>
 	<key>G</key>
 	<string>G_.glif</string>
+	<key>G.t</key>
+	<string>G_.t.glif</string>
 	<key>H</key>
 	<string>H_.glif</string>
+	<key>H.t</key>
+	<string>H_.t.glif</string>
 	<key>I</key>
 	<string>I_.glif</string>
+	<key>I.t</key>
+	<string>I_.t.glif</string>
 	<key>J</key>
 	<string>J_.glif</string>
+	<key>J.t</key>
+	<string>J_.t.glif</string>
 	<key>K</key>
 	<string>K_.glif</string>
+	<key>K.t</key>
+	<string>K_.t.glif</string>
 	<key>L</key>
 	<string>L_.glif</string>
+	<key>L.t</key>
+	<string>L_.t.glif</string>
 	<key>M</key>
 	<string>M_.glif</string>
+	<key>M.t</key>
+	<string>M_.t.glif</string>
 	<key>N</key>
 	<string>N_.glif</string>
+	<key>N.t</key>
+	<string>N_.t.glif</string>
 	<key>O</key>
 	<string>O_.glif</string>
+	<key>O.t</key>
+	<string>O_.t.glif</string>
 	<key>P</key>
 	<string>P_.glif</string>
+	<key>P.t</key>
+	<string>P_.t.glif</string>
 	<key>Q</key>
 	<string>Q_.glif</string>
+	<key>Q.t</key>
+	<string>Q_.t.glif</string>
 	<key>R</key>
 	<string>R_.glif</string>
+	<key>R.t</key>
+	<string>R_.t.glif</string>
 	<key>S</key>
 	<string>S_.glif</string>
+	<key>S.t</key>
+	<string>S_.t.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
+	<key>T.t</key>
+	<string>T_.t.glif</string>
 	<key>U</key>
 	<string>U_.glif</string>
+	<key>U.t</key>
+	<string>U_.t.glif</string>
 	<key>V</key>
 	<string>V_.glif</string>
+	<key>V.t</key>
+	<string>V_.t.glif</string>
 	<key>W</key>
 	<string>W_.glif</string>
+	<key>W.t</key>
+	<string>W_.t.glif</string>
 	<key>X</key>
 	<string>X_.glif</string>
+	<key>X.t</key>
+	<string>X_.t.glif</string>
 	<key>Y</key>
 	<string>Y_.glif</string>
+	<key>Y.t</key>
+	<string>Y_.t.glif</string>
 	<key>Z</key>
 	<string>Z_.glif</string>
+	<key>Z.t</key>
+	<string>Z_.t.glif</string>
 	<key>a</key>
 	<string>a.glif</string>
+	<key>a.t</key>
+	<string>a.t.glif</string>
+	<key>ampersand</key>
+	<string>ampersand.glif</string>
+	<key>ampersand.t</key>
+	<string>ampersand.t.glif</string>
+	<key>asciicircum</key>
+	<string>asciicircum.glif</string>
+	<key>asciicircum.t</key>
+	<string>asciicircum.t.glif</string>
+	<key>asciitilde</key>
+	<string>asciitilde.glif</string>
+	<key>asciitilde.t</key>
+	<string>asciitilde.t.glif</string>
+	<key>asterisk</key>
+	<string>asterisk.glif</string>
+	<key>asterisk.t</key>
+	<string>asterisk.t.glif</string>
+	<key>at</key>
+	<string>at.glif</string>
+	<key>at.t</key>
+	<string>at.t.glif</string>
 	<key>b</key>
 	<string>b.glif</string>
+	<key>b.t</key>
+	<string>b.t.glif</string>
+	<key>backslash</key>
+	<string>backslash.glif</string>
+	<key>backslash.t</key>
+	<string>backslash.t.glif</string>
+	<key>bar</key>
+	<string>bar.glif</string>
+	<key>bar.t</key>
+	<string>bar.t.glif</string>
 	<key>braceleft</key>
 	<string>braceleft.glif</string>
+	<key>braceleft.t</key>
+	<string>braceleft.t.glif</string>
 	<key>braceright</key>
 	<string>braceright.glif</string>
+	<key>braceright.t</key>
+	<string>braceright.t.glif</string>
+	<key>bracketleft</key>
+	<string>bracketleft.glif</string>
+	<key>bracketleft.t</key>
+	<string>bracketleft.t.glif</string>
+	<key>bracketright</key>
+	<string>bracketright.glif</string>
+	<key>bracketright.t</key>
+	<string>bracketright.t.glif</string>
 	<key>c</key>
 	<string>c.glif</string>
+	<key>c.t</key>
+	<string>c.t.glif</string>
+	<key>colon</key>
+	<string>colon.glif</string>
+	<key>colon.t</key>
+	<string>colon.t.glif</string>
+	<key>comma</key>
+	<string>comma.glif</string>
+	<key>comma.t</key>
+	<string>comma.t.glif</string>
 	<key>d</key>
 	<string>d.glif</string>
+	<key>d.t</key>
+	<string>d.t.glif</string>
+	<key>dollar</key>
+	<string>dollar.glif</string>
+	<key>dollar.t</key>
+	<string>dollar.t.glif</string>
 	<key>e</key>
 	<string>e.glif</string>
+	<key>e.t</key>
+	<string>e.t.glif</string>
 	<key>eight</key>
 	<string>eight.glif</string>
+	<key>eight.t</key>
+	<string>eight.t.glif</string>
+	<key>equal</key>
+	<string>equal.glif</string>
+	<key>equal.t</key>
+	<string>equal.t.glif</string>
+	<key>exclam</key>
+	<string>exclam.glif</string>
+	<key>exclam.t</key>
+	<string>exclam.t.glif</string>
 	<key>f</key>
 	<string>f.glif</string>
+	<key>f.t</key>
+	<string>f.t.glif</string>
 	<key>five</key>
 	<string>five.glif</string>
+	<key>five.t</key>
+	<string>five.t.glif</string>
 	<key>four</key>
 	<string>four.glif</string>
+	<key>four.t</key>
+	<string>four.t.glif</string>
 	<key>g</key>
 	<string>g.glif</string>
+	<key>g.t</key>
+	<string>g.t.glif</string>
+	<key>grave</key>
+	<string>grave.glif</string>
+	<key>grave.t</key>
+	<string>grave.t.glif</string>
+	<key>greater</key>
+	<string>greater.glif</string>
+	<key>greater.t</key>
+	<string>greater.t.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
+	<key>h.t</key>
+	<string>h.t.glif</string>
+	<key>hyphen</key>
+	<string>hyphen.glif</string>
+	<key>hyphen.t</key>
+	<string>hyphen.t.glif</string>
 	<key>i</key>
 	<string>i.glif</string>
+	<key>i.t</key>
+	<string>i.t.glif</string>
 	<key>j</key>
 	<string>j.glif</string>
+	<key>j.t</key>
+	<string>j.t.glif</string>
 	<key>k</key>
 	<string>k.glif</string>
+	<key>k.t</key>
+	<string>k.t.glif</string>
 	<key>l</key>
 	<string>l.glif</string>
+	<key>l.t</key>
+	<string>l.t.glif</string>
+	<key>less</key>
+	<string>less.glif</string>
+	<key>less.t</key>
+	<string>less.t.glif</string>
 	<key>m</key>
 	<string>m.glif</string>
+	<key>m.t</key>
+	<string>m.t.glif</string>
 	<key>n</key>
 	<string>n.glif</string>
+	<key>n.t</key>
+	<string>n.t.glif</string>
 	<key>nine</key>
 	<string>nine.glif</string>
+	<key>nine.t</key>
+	<string>nine.t.glif</string>
+	<key>numbersign</key>
+	<string>numbersign.glif</string>
+	<key>numbersign.t</key>
+	<string>numbersign.t.glif</string>
 	<key>o</key>
 	<string>o.glif</string>
+	<key>o.t</key>
+	<string>o.t.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
+	<key>one.t</key>
+	<string>one.t.glif</string>
 	<key>p</key>
 	<string>p.glif</string>
+	<key>p.t</key>
+	<string>p.t.glif</string>
+	<key>parenleft</key>
+	<string>parenleft.glif</string>
+	<key>parenleft.t</key>
+	<string>parenleft.t.glif</string>
+	<key>parenright</key>
+	<string>parenright.glif</string>
+	<key>parenright.t</key>
+	<string>parenright.t.glif</string>
+	<key>percent</key>
+	<string>percent.glif</string>
+	<key>percent.t</key>
+	<string>percent.t.glif</string>
+	<key>period</key>
+	<string>period.glif</string>
+	<key>period.t</key>
+	<string>period.t.glif</string>
+	<key>plus</key>
+	<string>plus.glif</string>
+	<key>plus.t</key>
+	<string>plus.t.glif</string>
 	<key>q</key>
 	<string>q.glif</string>
+	<key>q.t</key>
+	<string>q.t.glif</string>
+	<key>question</key>
+	<string>question.glif</string>
+	<key>question.t</key>
+	<string>question.t.glif</string>
+	<key>quotedbl</key>
+	<string>quotedbl.glif</string>
+	<key>quotedbl.t</key>
+	<string>quotedbl.t.glif</string>
+	<key>quotesingle</key>
+	<string>quotesingle.glif</string>
+	<key>quotesingle.t</key>
+	<string>quotesingle.t.glif</string>
 	<key>r</key>
 	<string>r.glif</string>
+	<key>r.t</key>
+	<string>r.t.glif</string>
 	<key>s</key>
 	<string>s.glif</string>
+	<key>s.t</key>
+	<string>s.t.glif</string>
+	<key>semicolon</key>
+	<string>semicolon.glif</string>
+	<key>semicolon.t</key>
+	<string>semicolon.t.glif</string>
 	<key>seven</key>
 	<string>seven.glif</string>
+	<key>seven.t</key>
+	<string>seven.t.glif</string>
 	<key>six</key>
 	<string>six.glif</string>
+	<key>six.t</key>
+	<string>six.t.glif</string>
+	<key>slash</key>
+	<string>slash.glif</string>
+	<key>slash.t</key>
+	<string>slash.t.glif</string>
+	<key>space</key>
+	<string>space.glif</string>
 	<key>t</key>
 	<string>t.glif</string>
+	<key>t.t</key>
+	<string>t.t.glif</string>
 	<key>tag_aalt</key>
 	<string>tag_aalt.glif</string>
 	<key>tag_afrc</key>
@@ -204,21 +432,43 @@
 	<string>tag_zero.glif</string>
 	<key>three</key>
 	<string>three.glif</string>
+	<key>three.t</key>
+	<string>three.t.glif</string>
 	<key>two</key>
 	<string>two.glif</string>
+	<key>two.t</key>
+	<string>two.t.glif</string>
 	<key>u</key>
 	<string>u.glif</string>
+	<key>u.t</key>
+	<string>u.t.glif</string>
+	<key>underscore</key>
+	<string>underscore.glif</string>
+	<key>underscore.t</key>
+	<string>underscore.t.glif</string>
 	<key>v</key>
 	<string>v.glif</string>
+	<key>v.t</key>
+	<string>v.t.glif</string>
 	<key>w</key>
 	<string>w.glif</string>
+	<key>w.t</key>
+	<string>w.t.glif</string>
 	<key>x</key>
 	<string>x.glif</string>
+	<key>x.t</key>
+	<string>x.t.glif</string>
 	<key>y</key>
 	<string>y.glif</string>
+	<key>y.t</key>
+	<string>y.t.glif</string>
 	<key>z</key>
 	<string>z.glif</string>
+	<key>z.t</key>
+	<string>z.t.glif</string>
 	<key>zero</key>
 	<string>zero.glif</string>
+	<key>zero.t</key>
+	<string>zero.t.glif</string>
 </dict>
 </plist>

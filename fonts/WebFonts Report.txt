@@ -1,13 +1,13 @@
 Web Fonts:
 **********
 
-OTTestFont-Blocks.ufo
----------------------
-source: /Users/david/Documents/Tools/font-variant-wut/fonts/OTTestFont-Blocks.ufo
+OTTestFont-Regular.ufo
+----------------------
+source: /Users/david/Documents/Tools/font-variant-wut/fonts/OTTestFont-Regular.ufo
 
 Build WOFF (TTF)
 ''''''''''''''''
-    path: /Users/david/Documents/Tools/font-variant-wut/fonts/OT_Test_Font-Blocks.woff
+    path: /Users/david/Documents/Tools/font-variant-wut/fonts/OT_Test_Font-Regular.woff
     Source is a UFO file. Generate TTF.
         --------------------
         
@@ -20,14 +20,14 @@ Build WOFF (TTF)
         makeotf [Note] Writing options file current.fpr
         makeotf [Note] Running makeotfexe with commands:
            cd ""
-           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpq6QcfR.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
-        makeotfexe [WARNING] <OTTestFont-Blocks> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 1]
-        makeotfexe [WARNING] <OTTestFont-Blocks> Only single and alternate substitutions are allowed within an 'aalt' feature [features 74]
-        makeotfexe [WARNING] <OTTestFont-Blocks> Major version number not in range 1 .. 255 [features 199]
-        makeotfexe [NOTE] Wrote new font file 'tmpq6QcfR.ttf'.
+           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpAIwS5d.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+        makeotfexe [WARNING] <OTTestFont-Regular> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 3]
+        makeotfexe [WARNING] <OTTestFont-Regular> Only single and alternate substitutions are allowed within an 'aalt' feature [features 76]
+        makeotfexe [WARNING] <OTTestFont-Regular> Major version number not in range 1 .. 255 [features 201]
+        makeotfexe [NOTE] Wrote new font file 'tmpAIwS5d.ttf'.
         
         
-        Built release mode font 'tmpq6QcfR.ttf' Revision 0.000
+        Built release mode font 'tmpAIwS5d.ttf' Revision 0.000
         
         --------------------
 
