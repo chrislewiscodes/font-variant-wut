@@ -28,33 +28,39 @@ foreach ($tester->tests as $rule => $info) {
 <head>
     <meta charset="utf-8">
     <title>CSS font-variant tester</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,700|Source+Sans+Pro:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
     <style>
         <?= $tester->atFontFace() ?>
 
         html {
-            font-family: "Source Sans Pro", sans-serif;
+            font-family: "Body Font", sans-serif;
         }
 
         code, tt {
-            font-family: "Source Code Pro", monospace;
-            font-weight: 500;
+            font-family: "Rule Font", monospace;
         }
 
         footer {
-            
+            margin-top: 1em;
         }
 
         h1 {
-            font-weight: 900;
-        }
-
-        h1 code {
-            font-weight: 700;
+            font-weight: bold;
         }
 
         p {
+            line-height: 1.4;
             max-width: 40em;
+        }
+
+        a:link {
+            color: red;
+            text-decoration: none;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #C00;
         }
 
         #browser {
@@ -69,19 +75,18 @@ foreach ($tester->tests as $rule => $info) {
             border: 1px solid #999;
         }
         
-        tbody th {
-            font-family: "Source Code Pro", monospace;
-            font-weight: 500;
-            text-align: left;
-        }
-        
         tbody th.rule {
+            font-family: "Rule Font", monospace;
+            text-align: left;
             vertical-align: middle;
             font-weight: bold;
         }
         
         tbody th.value {
+            font-family: "Value Font", monospace;
+            text-align: left;
             vertical-align: bottom;
+            font-weight: normal;
         }
         
         td {
@@ -271,7 +276,7 @@ foreach ($tester->tests as $rule => $info) {
         No personally-identifying information is recorded.
     </p>
 
-    <p id='browser'>Your browser: <strong><?= $browser['browser'] ?> <?= $browser['version'] ?> (<?= $browser['platform'] ?>)</strong> <?= $_SERVER['HTTP_USER_AGENT'] ?></p>
+    <p id='browser'>Your browser: <strong><?= $browser['browser'] ?> <?= $browser['version'] ?> (<?= $browser['platform'] ?>)</strong> <small><?= $_SERVER['HTTP_USER_AGENT'] ?></small></p>
 
     <!-- All features: <?= implode(" ", $tester->allfeatures) ?> -->
 

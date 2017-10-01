@@ -1,0 +1,40 @@
+
+/* Fonts used with permission from David Jonathan Ross https://djr.com/ */
+
+@font-face {
+    font-family: "Body Font";
+    src: url("https://does-font-variant.work/fonts/Output/OutputSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Body Font";
+    src: url("https://does-font-variant.work/fonts/Output/OutputSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Body Font";
+    src: url("https://does-font-variant.work/fonts/Output/OutputSans-Black.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Body Font";
+    src: url("https://does-font-variant.work/fonts/Output/OutputSans-BlackItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Rule Font";
+    src: url("https://does-font-variant.work/fonts/Input/InputSerifNarrow-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Value Font";
+    src: url("https://does-font-variant.work/fonts/Input/InputSansCompressed-Light.woff") format("woff");
+}
