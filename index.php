@@ -91,17 +91,16 @@ foreach ($tester->tests as $rule => $info) {
         
         td {
             vertical-align: top;
+            text-rendering: optimizeLegibility;
         }
         
         td.test span {
             display: block;
-            text-rendering: optimizeLegibility;
         }
         
         .test {
             font-family: "Font Variant Test";
             vertical-align: top;
-            word-break: break-all;
         }
         
         .yes {
@@ -283,16 +282,16 @@ foreach ($tester->tests as $rule => $info) {
     <table>
         <tbody>
         <?php foreach ($tester->tests as $rule => $info): ?>
-                <th rowspan='2' class='rule' data-rule='<?= $rule ?>'><?= $rule ?></th>
+                <th rowspan='2' class='rule'><?= $rule ?></th>
                 <th class='value'>initial</th>
                 <?php foreach ($info['values'] as $value): ?>
                 <th class='value'><?= $value ?></th>
                 <?php endforeach; ?>
             </tr>
             <tr>
-                <td class='test' style='<?= $rule ?>:initial' data-rule='<?= $rule ?>' data-value='initial'><?= $tester->testString($rule) ?></td>
+                <td class='test' style='<?= $rule ?>:initial'><?= $tester->testString($rule) ?></td>
                 <?php foreach ($info['values'] as $value): ?>
-                <td class='test' style='<?= $rule ?>:<?= $value ?>' data-rule='<?= $rule ?>' data-value='<?= $value ?>'><?= $tester->testString($rule) ?></td>
+                <td class='test' style='<?= $rule ?>:<?= $value ?>'><?= $tester->testString($rule) ?></td>
                 <?php endforeach; ?>
             </tr>
         <?php endforeach; ?>
