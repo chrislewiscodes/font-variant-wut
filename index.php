@@ -32,12 +32,25 @@ foreach ($tester->tests as $rule => $info) {
     <style>
         <?= $tester->atFontFace() ?>
 
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         html {
             font-family: "Body Font", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            padding: 1rem;
         }
 
         code, tt {
             font-family: "Rule Font", monospace;
+            font-weight: normal;
+            font-style: normal;
         }
 
         footer {
@@ -46,11 +59,23 @@ foreach ($tester->tests as $rule => $info) {
 
         h1 {
             font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            font-weight: normal;
+            font-style: normal;
+            color: #999;
+            margin: 0;
+            padding: 0;
         }
 
         p {
             line-height: 1.4;
             max-width: 40em;
+            margin: 1em 0;
         }
 
         a:link {
@@ -73,13 +98,16 @@ foreach ($tester->tests as $rule => $info) {
         
         th, td {
             border: 1px solid #999;
+            padding: 0.25em;
         }
         
         tbody th.rule {
+            padding-right: 0.5em;
             font-family: "Rule Font", monospace;
-            text-align: left;
+            text-align: right;
             vertical-align: middle;
-            font-weight: bold;
+            font-weight: normal;
+            font-style: normal;
         }
         
         tbody th.value {
@@ -87,20 +115,19 @@ foreach ($tester->tests as $rule => $info) {
             text-align: left;
             vertical-align: bottom;
             font-weight: normal;
+            font-style: normal;
         }
         
-        td {
+        td.test {
             vertical-align: top;
             text-rendering: optimizeLegibility;
+            text-align: left;
+            font-family: "Font Variant Test";
+            font-size: 120%;
         }
         
         td.test span {
             display: block;
-        }
-        
-        .test {
-            font-family: "Font Variant Test";
-            vertical-align: top;
         }
         
         .yes {
@@ -300,6 +327,7 @@ foreach ($tester->tests as $rule => $info) {
 
     <footer>
         Tool written by <a href="https://chrislewis.codes/">Chris Lewis</a>.
+        Fonts by <a href="https://djr.com/">David Jonathan Ross</a>.
         Source code available on <a href="https://github.com/chrissam42/font-variant-wut">GitHub</a>.
     </footer>
 

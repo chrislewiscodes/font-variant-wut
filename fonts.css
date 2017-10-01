@@ -31,10 +31,14 @@
 
 @font-face {
     font-family: "Rule Font";
-    src: url("https://does-font-variant.work/fonts/Input/InputSerifNarrow-Black.woff") format("woff");
+    src: url("https://does-font-variant.work/fonts/Input/InputMono-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Value Font";
-    src: url("https://does-font-variant.work/fonts/Input/InputSansCompressed-Light.woff") format("woff");
+    src: url("https://does-font-variant.work/fonts/Input/InputSansCompressed-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
