@@ -99,7 +99,7 @@ EOF;
         if ($this->whichfont === "block") {
             return implode("", $result);
         } else {
-            return "<span>" . implode("</span><span>", $result) . "<span>";
+            return "<span>" . implode("</span><span>", $result) . "</span>";
         }
     }
     
