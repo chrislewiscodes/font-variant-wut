@@ -64,8 +64,8 @@
 
 	feature swsh {
 		sub  s' w' s' h'  by tag;
+		sub tag from [tag];
 } swsh;
-
 	feature cswh {
 		sub  c' s' w' h'  by tag;
 } cswh;
