@@ -20,45 +20,14 @@ Build WOFF (TTF)
         makeotf [Note] Writing options file current.fpr
         makeotf [Note] Running makeotfexe with commands:
            cd ""
-           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpptmqdq.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmpF0706F.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
         makeotfexe [WARNING] <OTTestFont-Regular> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 3]
         makeotfexe [WARNING] <OTTestFont-Regular> Only single and alternate substitutions are allowed within an 'aalt' feature [features 77]
-        makeotfexe [WARNING] <OTTestFont-Regular> Major version number not in range 1 .. 255 [features 202]
-        makeotfexe [NOTE] Wrote new font file 'tmpptmqdq.ttf'.
+        makeotfexe [WARNING] <OTTestFont-Regular> Major version number not in range 1 .. 255 [features 207]
+        makeotfexe [NOTE] Wrote new font file 'tmpF0706F.ttf'.
         
         
-        Built release mode font 'tmpptmqdq.ttf' Revision 0.000
-        
-        --------------------
-
-
-OTTestFont-Blocks.ufo
----------------------
-source: /Users/david/Documents/Tools/font-variant-wut/fonts/OTTestFont-Blocks.ufo
-
-Build WOFF (TTF)
-''''''''''''''''
-    path: /Users/david/Documents/Tools/font-variant-wut/fonts/OT_Test_Font-Blocks.woff
-    Source is a UFO file. Generate TTF.
-        --------------------
-        
-        makeotf Report
-        
-        makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
-        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
-        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
-        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
-        makeotf [Note] Writing options file current.fpr
-        makeotf [Note] Running makeotfexe with commands:
-           cd ""
-           makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "tmprEkNcR.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
-        makeotfexe [WARNING] <OTTestFont-Blocks> [internal] Feature block seen before any language system statement.  You should place languagesystem statements before any feature definition [features 1]
-        makeotfexe [WARNING] <OTTestFont-Blocks> Only single and alternate substitutions are allowed within an 'aalt' feature [features 74]
-        makeotfexe [WARNING] <OTTestFont-Blocks> Major version number not in range 1 .. 255 [features 202]
-        makeotfexe [NOTE] Wrote new font file 'tmprEkNcR.ttf'.
-        
-        
-        Built release mode font 'tmprEkNcR.ttf' Revision 0.000
+        Built release mode font 'tmpF0706F.ttf' Revision 0.000
         
         --------------------
 

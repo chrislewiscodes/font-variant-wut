@@ -181,3 +181,8 @@
 		sub  m' e' d' i'  by tag_medi;
 } medi;
 
+	feature cv01 {
+		sub  c' v' zero' one'  by tag_cv01;
+} cv01;
+
+

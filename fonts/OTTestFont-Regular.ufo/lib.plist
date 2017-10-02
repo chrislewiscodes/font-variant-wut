@@ -528,6 +528,9 @@
 		<string>x</string>
 		<string>y</string>
 		<string>z</string>
+		<string>cv01</string>
+		<string>tag_swsh2</string>
+		<string>tag_swsh1</string>
 	</array>
 </dict>
 </plist>
