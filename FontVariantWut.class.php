@@ -11,6 +11,7 @@ namespace FontVariantWut;
 
 class FontVariantWut {
     public $allfeatures;
+    public $reportsFile = "reports.csv";
     private $whichfont = "tags";
 
     public $tests = array(

@@ -9,6 +9,10 @@ namespace FontVariantWut;
     https://github.com/chrissam42/font-variant-wut
 */
 
+require_once("./FontVariantWut.class.php");
+
+$tester = new FontVariantWut();
+
 function errrr($code, $msg) {
     header("HTTP/1.1 $code");
     die($msg);
@@ -32,31 +36,22 @@ if (!is_object($report)) {
 
 header("Content-type: text/plain");
 
-$knownrules = array(
-    'font-variant-alternates',
-    'font-variant-caps',
-    'font-variant-ligatures',
-    'font-variant-numeric',
-    'font-variant-position',
-);
-
 $columns = array_merge(
-    array('Report date', 'Platform', 'Browser', 'Version'),
-    $knownrules,
-    array('User agent')
+    array('date', 'platform', 'browser', 'version'),
+    array_keys($tester->tests),
+    array('userAgent')
 );
 
-$reportsfile = "reports.csv";
 $rfh = null;
-if (!file_exists($reportsfile) || !filesize($reportsfile)) {
+if (!file_exists($tester->reportsFile) || !filesize($tester->reportsFile)) {
     try {
-        $rfh = fopen($reportsfile, 'w');
+        $rfh = fopen($tester->reportsFile, 'w');
         fwrite($rfh, implode(",", $columns) . "\r\n");
     } catch (\Exception $e) {
         errrr(400, "Error accessing result columns: $e");
     }
 } else {
-    $rfh = fopen($reportsfile, 'a');
+    $rfh = fopen($tester->reportsFile, 'a');
 }
 
 function csvCol($val, $end=false) {
@@ -79,7 +74,7 @@ try {
     csvCol($report->browser->platform);
     csvCol($report->browser->browser);
     csvCol($report->browser->version);
-    foreach ($knownrules as $rule) {
+    foreach ($tester->tests as $rule => $info) {
         if (isset($report->results->$rule)) {
             $r = $report->results->$rule;
             csvCol($r->finalAnswer . ' ' . count($r->uniqueValues) . '/' . count($r->rowValues));
