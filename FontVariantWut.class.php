@@ -15,12 +15,12 @@ class FontVariantWut {
 
     public $tests = array(
         "font-variant-alternates" => array(
-            'values' => array('normal', 'historical-forms', 'stylistic(1)', 'styleset(1)', 'character-variant(1)', 'swash(1)', 'ornaments(1)', 'annotation(1)'),
+            'values' => array('normal', 'historical-forms', 'stylistic(test)', 'styleset(test)', 'character-variant(test)', 'swash(test)', 'ornaments(test)', 'annotation(test)'),
             'features' => '.alt|ss\d\d|cv\d\d|swsh|cswh|hist|ornm',
         ),
         "font-variant-caps" => array(
             'values' => array('normal', 'small-caps', 'all-small-caps', 'petite-caps', 'all-petite-caps', 'unicase', 'titling-caps'),
-            'features' => 'c2pc|c2sc|pcap|smcp|unic|titl',
+            'features' => 'c2pc|c2sc|pcap|smcp|unic|titl|case',
         ),
         "font-variant-ligatures" => array(
             'values' => array('none', 'common-ligatures', 'discretionary-ligatures', 'historical-ligatures', 'contextual'),
@@ -53,6 +53,15 @@ class FontVariantWut {
             font-family: "Font Variant Test";
             font-weight: normal;
             font-style: normal;
+        }
+        
+        @font-feature-values Font Variant Test { 
+            @stylistic { test: 1 } 
+            @styleset { test: 1 } 
+            @character-variant { test: 1 } 
+            @swash { test: 1 } 
+            @ornaments { test: 1 } 
+            @annotation { test: 1 } 
         }
 EOF;
     }
@@ -145,7 +154,9 @@ EOF;
                 $p = 'iOS';
             } else if (preg_match('/Mac OS X/', $ua)) {
                 $p = 'Mac';
-            }
+            } else if (preg_match('/Linux/', $ua)) {
+                $p = 'Linux';
+            };
         }
         
         return array(
