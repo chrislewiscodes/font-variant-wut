@@ -191,6 +191,7 @@
 				<string>tag_tnum</string>
 				<string>tag_unic</string>
 				<string>tag_zero</string>
+				<string>tag_cv01</string>
 				<string>A</string>
 				<string>B</string>
 				<string>C</string>
@@ -432,6 +433,7 @@
 		<string>tag_tnum</string>
 		<string>tag_unic</string>
 		<string>tag_zero</string>
+		<string>tag_cv01</string>
 		<string>A</string>
 		<string>B</string>
 		<string>C</string>

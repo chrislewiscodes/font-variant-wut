@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="tag_ss01" format="1">
+<glyph name="cv01" format="1">
   <advance width="3000"/>
   <outline>
-    <component base="s.t"/>
-    <component base="s.t" xOffset="750"/>
+    <component base="C.t"/>
+    <component base="V.t" xOffset="750"/>
     <component base="zero.t" xOffset="1500"/>
     <component base="one.t" xOffset="2250"/>
   </outline>

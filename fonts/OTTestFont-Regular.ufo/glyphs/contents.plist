@@ -170,6 +170,8 @@
 	<string>comma.glif</string>
 	<key>comma.t</key>
 	<string>comma.t.glif</string>
+	<key>cv01</key>
+	<string>cv01.glif</string>
 	<key>d</key>
 	<string>d.glif</string>
 	<key>d.t</key>
@@ -360,6 +362,8 @@
 	<string>tag_cpsp.glif</string>
 	<key>tag_cswh</key>
 	<string>tag_cswh.glif</string>
+	<key>tag_cv01</key>
+	<string>tag_cv01.glif</string>
 	<key>tag_dlig</key>
 	<string>tag_dlig.glif</string>
 	<key>tag_dnom</key>
@@ -422,6 +426,10 @@
 	<string>tag_sups.glif</string>
 	<key>tag_swsh</key>
 	<string>tag_swsh.glif</string>
+	<key>tag_swsh1</key>
+	<string>tag_swsh1.glif</string>
+	<key>tag_swsh2</key>
+	<string>tag_swsh2.glif</string>
 	<key>tag_titl</key>
 	<string>tag_titl.glif</string>
 	<key>tag_tnum</key>

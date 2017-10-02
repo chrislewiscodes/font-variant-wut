@@ -4,3 +4,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'OT Test Font_Blocks';
+    src:    url('OT_Test_Font-Blocks.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

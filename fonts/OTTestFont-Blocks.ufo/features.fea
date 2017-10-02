@@ -178,3 +178,6 @@
 		sub  m' e' d' i'  by tag;
 } medi;
 
+	feature cv01 {
+		sub  c' v' zero' one'  by tag;
+} cv01;
