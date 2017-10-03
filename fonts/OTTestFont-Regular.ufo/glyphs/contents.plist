@@ -344,8 +344,24 @@
 	<string>t.t.glif</string>
 	<key>tag_aalt</key>
 	<string>tag_aalt.glif</string>
+	<key>tag_abvf</key>
+	<string>tag_abvf.glif</string>
+	<key>tag_abvm</key>
+	<string>tag_abvm.glif</string>
+	<key>tag_abvs</key>
+	<string>tag_abvs.glif</string>
 	<key>tag_afrc</key>
 	<string>tag_afrc.glif</string>
+	<key>tag_akhn</key>
+	<string>tag_akhn.glif</string>
+	<key>tag_asdf</key>
+	<string>tag_asdf.glif</string>
+	<key>tag_blwf</key>
+	<string>tag_blwf.glif</string>
+	<key>tag_blwm</key>
+	<string>tag_blwm.glif</string>
+	<key>tag_blws</key>
+	<string>tag_blws.glif</string>
 	<key>tag_c2pc</key>
 	<string>tag_c2pc.glif</string>
 	<key>tag_c2sc</key>
@@ -356,38 +372,96 @@
 	<string>tag_case.glif</string>
 	<key>tag_ccmp</key>
 	<string>tag_ccmp.glif</string>
+	<key>tag_cfar</key>
+	<string>tag_cfar.glif</string>
+	<key>tag_cjct</key>
+	<string>tag_cjct.glif</string>
 	<key>tag_clig</key>
 	<string>tag_clig.glif</string>
+	<key>tag_cpct</key>
+	<string>tag_cpct.glif</string>
 	<key>tag_cpsp</key>
 	<string>tag_cpsp.glif</string>
 	<key>tag_cswh</key>
 	<string>tag_cswh.glif</string>
+	<key>tag_curs</key>
+	<string>tag_curs.glif</string>
 	<key>tag_cv01</key>
 	<string>tag_cv01.glif</string>
+	<key>tag_dist</key>
+	<string>tag_dist.glif</string>
 	<key>tag_dlig</key>
 	<string>tag_dlig.glif</string>
 	<key>tag_dnom</key>
 	<string>tag_dnom.glif</string>
+	<key>tag_expt</key>
+	<string>tag_expt.glif</string>
+	<key>tag_falt</key>
+	<string>tag_falt.glif</string>
+	<key>tag_fin2</key>
+	<string>tag_fin2.glif</string>
+	<key>tag_fin3</key>
+	<string>tag_fin3.glif</string>
 	<key>tag_fina</key>
 	<string>tag_fina.glif</string>
 	<key>tag_frac</key>
 	<string>tag_frac.glif</string>
+	<key>tag_fwid</key>
+	<string>tag_fwid.glif</string>
+	<key>tag_half</key>
+	<string>tag_half.glif</string>
+	<key>tag_haln</key>
+	<string>tag_haln.glif</string>
+	<key>tag_halt</key>
+	<string>tag_halt.glif</string>
 	<key>tag_hist</key>
 	<string>tag_hist.glif</string>
+	<key>tag_hkna</key>
+	<string>tag_hkna.glif</string>
 	<key>tag_hlig</key>
 	<string>tag_hlig.glif</string>
+	<key>tag_hngl</key>
+	<string>tag_hngl.glif</string>
+	<key>tag_hojo</key>
+	<string>tag_hojo.glif</string>
+	<key>tag_hwid</key>
+	<string>tag_hwid.glif</string>
 	<key>tag_init</key>
 	<string>tag_init.glif</string>
 	<key>tag_isol</key>
 	<string>tag_isol.glif</string>
+	<key>tag_ital</key>
+	<string>tag_ital.glif</string>
 	<key>tag_jalt</key>
 	<string>tag_jalt.glif</string>
+	<key>tag_jp04</key>
+	<string>tag_jp04.glif</string>
+	<key>tag_jp78</key>
+	<string>tag_jp78.glif</string>
+	<key>tag_jp83</key>
+	<string>tag_jp83.glif</string>
+	<key>tag_jp90</key>
+	<string>tag_jp90.glif</string>
+	<key>tag_kern</key>
+	<string>tag_kern.glif</string>
+	<key>tag_lfbd</key>
+	<string>tag_lfbd.glif</string>
 	<key>tag_liga</key>
 	<string>tag_liga.glif</string>
+	<key>tag_ljmo</key>
+	<string>tag_ljmo.glif</string>
 	<key>tag_lnum</key>
 	<string>tag_lnum.glif</string>
+	<key>tag_locl</key>
+	<string>tag_locl.glif</string>
+	<key>tag_ltra</key>
+	<string>tag_ltra.glif</string>
+	<key>tag_ltrm</key>
+	<string>tag_ltrm.glif</string>
 	<key>tag_mark</key>
 	<string>tag_mark.glif</string>
+	<key>tag_med2</key>
+	<string>tag_med2.glif</string>
 	<key>tag_medi</key>
 	<string>tag_medi.glif</string>
 	<key>tag_mgrk</key>
@@ -398,28 +472,108 @@
 	<string>tag_mset.glif</string>
 	<key>tag_nalt</key>
 	<string>tag_nalt.glif</string>
+	<key>tag_nlck</key>
+	<string>tag_nlck.glif</string>
+	<key>tag_nukt</key>
+	<string>tag_nukt.glif</string>
 	<key>tag_numr</key>
 	<string>tag_numr.glif</string>
 	<key>tag_onum</key>
 	<string>tag_onum.glif</string>
+	<key>tag_opbd</key>
+	<string>tag_opbd.glif</string>
 	<key>tag_ordn</key>
 	<string>tag_ordn.glif</string>
 	<key>tag_ornm</key>
 	<string>tag_ornm.glif</string>
+	<key>tag_palt</key>
+	<string>tag_palt.glif</string>
 	<key>tag_pcap</key>
 	<string>tag_pcap.glif</string>
+	<key>tag_pkna</key>
+	<string>tag_pkna.glif</string>
 	<key>tag_pnum</key>
 	<string>tag_pnum.glif</string>
+	<key>tag_pref</key>
+	<string>tag_pref.glif</string>
+	<key>tag_pres</key>
+	<string>tag_pres.glif</string>
+	<key>tag_pstf</key>
+	<string>tag_pstf.glif</string>
+	<key>tag_psts</key>
+	<string>tag_psts.glif</string>
+	<key>tag_pwid</key>
+	<string>tag_pwid.glif</string>
+	<key>tag_qwid</key>
+	<string>tag_qwid.glif</string>
+	<key>tag_rand</key>
+	<string>tag_rand.glif</string>
+	<key>tag_rclt</key>
+	<string>tag_rclt.glif</string>
+	<key>tag_rkrf</key>
+	<string>tag_rkrf.glif</string>
 	<key>tag_rlig</key>
 	<string>tag_rlig.glif</string>
+	<key>tag_rphf</key>
+	<string>tag_rphf.glif</string>
+	<key>tag_rtbd</key>
+	<string>tag_rtbd.glif</string>
+	<key>tag_rtla</key>
+	<string>tag_rtla.glif</string>
+	<key>tag_rtlm</key>
+	<string>tag_rtlm.glif</string>
+	<key>tag_ruby</key>
+	<string>tag_ruby.glif</string>
 	<key>tag_salt</key>
 	<string>tag_salt.glif</string>
 	<key>tag_sinf</key>
 	<string>tag_sinf.glif</string>
+	<key>tag_size</key>
+	<string>tag_size.glif</string>
 	<key>tag_smcp</key>
 	<string>tag_smcp.glif</string>
+	<key>tag_smpl</key>
+	<string>tag_smpl.glif</string>
 	<key>tag_ss01</key>
 	<string>tag_ss01.glif</string>
+	<key>tag_ss02</key>
+	<string>tag_ss02.glif</string>
+	<key>tag_ss03</key>
+	<string>tag_ss03.glif</string>
+	<key>tag_ss04</key>
+	<string>tag_ss04.glif</string>
+	<key>tag_ss05</key>
+	<string>tag_ss05.glif</string>
+	<key>tag_ss06</key>
+	<string>tag_ss06.glif</string>
+	<key>tag_ss07</key>
+	<string>tag_ss07.glif</string>
+	<key>tag_ss08</key>
+	<string>tag_ss08.glif</string>
+	<key>tag_ss09</key>
+	<string>tag_ss09.glif</string>
+	<key>tag_ss10</key>
+	<string>tag_ss10.glif</string>
+	<key>tag_ss11</key>
+	<string>tag_ss11.glif</string>
+	<key>tag_ss12</key>
+	<string>tag_ss12.glif</string>
+	<key>tag_ss13</key>
+	<string>tag_ss13.glif</string>
+	<key>tag_ss14</key>
+	<string>tag_ss14.glif</string>
+	<key>tag_ss15</key>
+	<string>tag_ss15.glif</string>
+	<key>tag_ss16</key>
+	<string>tag_ss16.glif</string>
+	<key>tag_ss17</key>
+	<string>tag_ss17.glif</string>
+	<key>tag_ss18</key>
+	<string>tag_ss18.glif</string>
+	<key>tag_ss19</key>
+	<string>tag_ss19.glif</string>
+	<key>tag_ss20</key>
+	<string>tag_ss20.glif</string>
 	<key>tag_subs</key>
 	<string>tag_subs.glif</string>
 	<key>tag_sups</key>
@@ -432,10 +586,36 @@
 	<string>tag_swsh2.glif</string>
 	<key>tag_titl</key>
 	<string>tag_titl.glif</string>
+	<key>tag_tjmo</key>
+	<string>tag_tjmo.glif</string>
+	<key>tag_tnam</key>
+	<string>tag_tnam.glif</string>
 	<key>tag_tnum</key>
 	<string>tag_tnum.glif</string>
+	<key>tag_trad</key>
+	<string>tag_trad.glif</string>
+	<key>tag_twid</key>
+	<string>tag_twid.glif</string>
 	<key>tag_unic</key>
 	<string>tag_unic.glif</string>
+	<key>tag_valt</key>
+	<string>tag_valt.glif</string>
+	<key>tag_vatu</key>
+	<string>tag_vatu.glif</string>
+	<key>tag_vert</key>
+	<string>tag_vert.glif</string>
+	<key>tag_vhal</key>
+	<string>tag_vhal.glif</string>
+	<key>tag_vjmo</key>
+	<string>tag_vjmo.glif</string>
+	<key>tag_vkna</key>
+	<string>tag_vkna.glif</string>
+	<key>tag_vkrn</key>
+	<string>tag_vkrn.glif</string>
+	<key>tag_vpal</key>
+	<string>tag_vpal.glif</string>
+	<key>tag_vrt2</key>
+	<string>tag_vrt2.glif</string>
 	<key>tag_zero</key>
 	<string>tag_zero.glif</string>
 	<key>three</key>

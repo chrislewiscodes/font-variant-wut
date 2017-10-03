@@ -181,3 +181,364 @@
 	feature cv01 {
 		sub  c' v' zero' one'  by tag;
 } cv01;
+
+	feature abvf {
+		sub  a' b' v' f  by tag;
+} abvf;
+        
+	feature abvm {
+		sub  a' b' v' m  by tag;
+} abvm;
+        
+	feature abvs {
+		sub  a' b' v' s  by tag;
+} abvs;
+        
+	feature akhn {
+		sub  a' k' h' n  by tag;
+} akhn;
+        
+	feature asdf {
+		sub  a' s' d' f  by tag;
+} asdf;
+        
+	feature blwf {
+		sub  b' l' w' f  by tag;
+} blwf;
+        
+	feature blwm {
+		sub  b' l' w' m  by tag;
+} blwm;
+        
+	feature blws {
+		sub  b' l' w' s  by tag;
+} blws;
+        
+	feature cfar {
+		sub  c' f' a' r  by tag;
+} cfar;
+        
+	feature cjct {
+		sub  c' j' c' t  by tag;
+} cjct;
+        
+	feature cpct {
+		sub  c' p' c' t  by tag;
+} cpct;
+        
+	feature curs {
+		sub  c' u' r' s  by tag;
+} curs;
+        
+	feature dist {
+		sub  d' i' s' t  by tag;
+} dist;
+        
+	feature expt {
+		sub  e' x' p' t  by tag;
+} expt;
+        
+	feature falt {
+		sub  f' a' l' t  by tag;
+} falt;
+        
+	feature fin2 {
+		sub  f' i' n' two  by tag;
+} fin2;
+        
+	feature fin3 {
+		sub  f' i' n' three  by tag;
+} fin3;
+        
+	feature fwid {
+		sub  f' w' i' d  by tag;
+} fwid;
+        
+	feature half {
+		sub  h' a' l' f  by tag;
+} half;
+        
+	feature haln {
+		sub  h' a' l' n  by tag;
+} haln;
+        
+	feature halt {
+		sub  h' a' l' t  by tag;
+} halt;
+        
+	feature hkna {
+		sub  h' k' n' a  by tag;
+} hkna;
+        
+	feature hngl {
+		sub  h' n' g' l  by tag;
+} hngl;
+        
+	feature hojo {
+		sub  h' o' j' o  by tag;
+} hojo;
+        
+	feature hwid {
+		sub  h' w' i' d  by tag;
+} hwid;
+        
+	feature ital {
+		sub  i' t' a' l  by tag;
+} ital;
+        
+	feature jp04 {
+		sub  j' p' zero' four  by tag;
+} jp04;
+        
+	feature jp78 {
+		sub  j' p' seven' eight  by tag;
+} jp78;
+        
+	feature jp83 {
+		sub  j' p' eight' three  by tag;
+} jp83;
+        
+	feature jp90 {
+		sub  j' p' nine' zero  by tag;
+} jp90;
+        
+	feature kern {
+		sub  k' e' r' n  by tag;
+} kern;
+        
+	feature lfbd {
+		sub  l' f' b' d  by tag;
+} lfbd;
+        
+	feature ljmo {
+		sub  l' j' m' o  by tag;
+} ljmo;
+        
+	feature locl {
+		sub  l' o' c' l  by tag;
+} locl;
+        
+	feature ltra {
+		sub  l' t' r' a  by tag;
+} ltra;
+        
+	feature ltrm {
+		sub  l' t' r' m  by tag;
+} ltrm;
+        
+	feature med2 {
+		sub  m' e' d' two  by tag;
+} med2;
+        
+	feature nlck {
+		sub  n' l' c' k  by tag;
+} nlck;
+        
+	feature nukt {
+		sub  n' u' k' t  by tag;
+} nukt;
+        
+	feature opbd {
+		sub  o' p' b' d  by tag;
+} opbd;
+        
+	feature palt {
+		sub  p' a' l' t  by tag;
+} palt;
+        
+	feature pkna {
+		sub  p' k' n' a  by tag;
+} pkna;
+        
+	feature pref {
+		sub  p' r' e' f  by tag;
+} pref;
+        
+	feature pres {
+		sub  p' r' e' s  by tag;
+} pres;
+        
+	feature pstf {
+		sub  p' s' t' f  by tag;
+} pstf;
+        
+	feature psts {
+		sub  p' s' t' s  by tag;
+} psts;
+        
+	feature pwid {
+		sub  p' w' i' d  by tag;
+} pwid;
+        
+	feature qwid {
+		sub  q' w' i' d  by tag;
+} qwid;
+        
+	feature rand {
+		sub  r' a' n' d  by tag;
+} rand;
+        
+	feature rclt {
+		sub  r' c' l' t  by tag;
+} rclt;
+        
+	feature rkrf {
+		sub  r' k' r' f  by tag;
+} rkrf;
+        
+	feature rphf {
+		sub  r' p' h' f  by tag;
+} rphf;
+        
+	feature rtbd {
+		sub  r' t' b' d  by tag;
+} rtbd;
+        
+	feature rtla {
+		sub  r' t' l' a  by tag;
+} rtla;
+        
+	feature rtlm {
+		sub  r' t' l' m  by tag;
+} rtlm;
+        
+	feature ruby {
+		sub  r' u' b' y  by tag;
+} ruby;
+        
+	feature size {
+		sub  s' i' z' e  by tag;
+} size;
+        
+	feature smpl {
+		sub  s' m' p' l  by tag;
+} smpl;
+        
+	feature ss02 {
+		sub  s' s' zero' two  by tag;
+} ss02;
+        
+	feature ss03 {
+		sub  s' s' zero' three  by tag;
+} ss03;
+        
+	feature ss04 {
+		sub  s' s' zero' four  by tag;
+} ss04;
+        
+	feature ss05 {
+		sub  s' s' zero' five  by tag;
+} ss05;
+        
+	feature ss06 {
+		sub  s' s' zero' six  by tag;
+} ss06;
+        
+	feature ss07 {
+		sub  s' s' zero' seven  by tag;
+} ss07;
+        
+	feature ss08 {
+		sub  s' s' zero' eight  by tag;
+} ss08;
+        
+	feature ss09 {
+		sub  s' s' zero' nine  by tag;
+} ss09;
+        
+	feature ss10 {
+		sub  s' s' one' zero  by tag;
+} ss10;
+        
+	feature ss11 {
+		sub  s' s' one' one  by tag;
+} ss11;
+        
+	feature ss12 {
+		sub  s' s' one' two  by tag;
+} ss12;
+        
+	feature ss13 {
+		sub  s' s' one' three  by tag;
+} ss13;
+        
+	feature ss14 {
+		sub  s' s' one' four  by tag;
+} ss14;
+        
+	feature ss15 {
+		sub  s' s' one' five  by tag;
+} ss15;
+        
+	feature ss16 {
+		sub  s' s' one' six  by tag;
+} ss16;
+        
+	feature ss17 {
+		sub  s' s' one' seven  by tag;
+} ss17;
+        
+	feature ss18 {
+		sub  s' s' one' eight  by tag;
+} ss18;
+        
+	feature ss19 {
+		sub  s' s' one' nine  by tag;
+} ss19;
+        
+	feature ss20 {
+		sub  s' s' two' zero  by tag;
+} ss20;
+        
+	feature tjmo {
+		sub  t' j' m' o  by tag;
+} tjmo;
+        
+	feature tnam {
+		sub  t' n' a' m  by tag;
+} tnam;
+        
+	feature trad {
+		sub  t' r' a' d  by tag;
+} trad;
+        
+	feature twid {
+		sub  t' w' i' d  by tag;
+} twid;
+        
+	feature valt {
+		sub  v' a' l' t  by tag;
+} valt;
+        
+	feature vatu {
+		sub  v' a' t' u  by tag;
+} vatu;
+        
+	feature vert {
+		sub  v' e' r' t  by tag;
+} vert;
+        
+	feature vhal {
+		sub  v' h' a' l  by tag;
+} vhal;
+        
+	feature vjmo {
+		sub  v' j' m' o  by tag;
+} vjmo;
+        
+	feature vkna {
+		sub  v' k' n' a  by tag;
+} vkna;
+        
+	feature vkrn {
+		sub  v' k' r' n  by tag;
+} vkrn;
+        
+	feature vpal {
+		sub  v' p' a' l  by tag;
+} vpal;
+        
+	feature vrt2 {
+		sub  v' r' t' two  by tag;
+} vrt2;
+        

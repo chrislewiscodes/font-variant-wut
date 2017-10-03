@@ -186,3 +186,363 @@
 } cv01;
 
 
+   
+	feature abvf {
+		sub  a' b' v' f' by tag_abvf;
+} abvf;
+   
+	feature abvm {
+		sub  a' b' v' m' by tag_abvm;
+} abvm;
+   
+	feature abvs {
+		sub  a' b' v' s' by tag_abvs;
+} abvs;
+   
+	feature akhn {
+		sub  a' k' h' n' by tag_akhn;
+} akhn;
+   
+	feature asdf {
+		sub  a' s' d' f' by tag_asdf;
+} asdf;
+   
+	feature blwf {
+		sub  b' l' w' f' by tag_blwf;
+} blwf;
+   
+	feature blwm {
+		sub  b' l' w' m' by tag_blwm;
+} blwm;
+   
+	feature blws {
+		sub  b' l' w' s' by tag_blws;
+} blws;
+   
+	feature cfar {
+		sub  c' f' a' r' by tag_cfar;
+} cfar;
+   
+	feature cjct {
+		sub  c' j' c' t' by tag_cjct;
+} cjct;
+   
+	feature cpct {
+		sub  c' p' c' t' by tag_cpct;
+} cpct;
+   
+	feature curs {
+		sub  c' u' r' s' by tag_curs;
+} curs;
+   
+	feature dist {
+		sub  d' i' s' t' by tag_dist;
+} dist;
+   
+	feature expt {
+		sub  e' x' p' t' by tag_expt;
+} expt;
+   
+	feature falt {
+		sub  f' a' l' t' by tag_falt;
+} falt;
+   
+	feature fin2 {
+		sub  f' i' n' two' by tag_fin2;
+} fin2;
+   
+	feature fin3 {
+		sub  f' i' n' three' by tag_fin3;
+} fin3;
+   
+	feature fwid {
+		sub  f' w' i' d' by tag_fwid;
+} fwid;
+   
+	feature half {
+		sub  h' a' l' f' by tag_half;
+} half;
+   
+	feature haln {
+		sub  h' a' l' n' by tag_haln;
+} haln;
+   
+	feature halt {
+		sub  h' a' l' t' by tag_halt;
+} halt;
+   
+	feature hkna {
+		sub  h' k' n' a' by tag_hkna;
+} hkna;
+   
+	feature hngl {
+		sub  h' n' g' l' by tag_hngl;
+} hngl;
+   
+	feature hojo {
+		sub  h' o' j' o' by tag_hojo;
+} hojo;
+   
+	feature hwid {
+		sub  h' w' i' d' by tag_hwid;
+} hwid;
+   
+	feature ital {
+		sub  i' t' a' l' by tag_ital;
+} ital;
+   
+	feature jp04 {
+		sub  j' p' zero' four' by tag_jp04;
+} jp04;
+   
+	feature jp78 {
+		sub  j' p' seven' eight' by tag_jp78;
+} jp78;
+   
+	feature jp83 {
+		sub  j' p' eight' three' by tag_jp83;
+} jp83;
+   
+	feature jp90 {
+		sub  j' p' nine' zero' by tag_jp90;
+} jp90;
+   
+	feature kern {
+		sub  k' e' r' n' by tag_kern;
+} kern;
+   
+	feature lfbd {
+		sub  l' f' b' d' by tag_lfbd;
+} lfbd;
+   
+	feature ljmo {
+		sub  l' j' m' o' by tag_ljmo;
+} ljmo;
+   
+	feature locl {
+		sub  l' o' c' l' by tag_locl;
+} locl;
+   
+	feature ltra {
+		sub  l' t' r' a' by tag_ltra;
+} ltra;
+   
+	feature ltrm {
+		sub  l' t' r' m' by tag_ltrm;
+} ltrm;
+   
+	feature med2 {
+		sub  m' e' d' two' by tag_med2;
+} med2;
+   
+	feature nlck {
+		sub  n' l' c' k' by tag_nlck;
+} nlck;
+   
+	feature nukt {
+		sub  n' u' k' t' by tag_nukt;
+} nukt;
+   
+	feature opbd {
+		sub  o' p' b' d' by tag_opbd;
+} opbd;
+   
+	feature palt {
+		sub  p' a' l' t' by tag_palt;
+} palt;
+   
+	feature pkna {
+		sub  p' k' n' a' by tag_pkna;
+} pkna;
+   
+	feature pref {
+		sub  p' r' e' f' by tag_pref;
+} pref;
+   
+	feature pres {
+		sub  p' r' e' s' by tag_pres;
+} pres;
+   
+	feature pstf {
+		sub  p' s' t' f' by tag_pstf;
+} pstf;
+   
+	feature psts {
+		sub  p' s' t' s' by tag_psts;
+} psts;
+   
+	feature pwid {
+		sub  p' w' i' d' by tag_pwid;
+} pwid;
+   
+	feature qwid {
+		sub  q' w' i' d' by tag_qwid;
+} qwid;
+   
+	feature rand {
+		sub  r' a' n' d' by tag_rand;
+} rand;
+   
+	feature rclt {
+		sub  r' c' l' t' by tag_rclt;
+} rclt;
+   
+	feature rkrf {
+		sub  r' k' r' f' by tag_rkrf;
+} rkrf;
+   
+	feature rphf {
+		sub  r' p' h' f' by tag_rphf;
+} rphf;
+   
+	feature rtbd {
+		sub  r' t' b' d' by tag_rtbd;
+} rtbd;
+   
+	feature rtla {
+		sub  r' t' l' a' by tag_rtla;
+} rtla;
+   
+	feature rtlm {
+		sub  r' t' l' m' by tag_rtlm;
+} rtlm;
+   
+	feature ruby {
+		sub  r' u' b' y' by tag_ruby;
+} ruby;
+   
+	feature size {
+		sub  s' i' z' e' by tag_size;
+} size;
+   
+	feature smpl {
+		sub  s' m' p' l' by tag_smpl;
+} smpl;
+   
+	feature ss02 {
+		sub  s' s' zero' two' by tag_ss02;
+} ss02;
+   
+	feature ss03 {
+		sub  s' s' zero' three' by tag_ss03;
+} ss03;
+   
+	feature ss04 {
+		sub  s' s' zero' four' by tag_ss04;
+} ss04;
+   
+	feature ss05 {
+		sub  s' s' zero' five' by tag_ss05;
+} ss05;
+   
+	feature ss06 {
+		sub  s' s' zero' six' by tag_ss06;
+} ss06;
+   
+	feature ss07 {
+		sub  s' s' zero' seven' by tag_ss07;
+} ss07;
+   
+	feature ss08 {
+		sub  s' s' zero' eight' by tag_ss08;
+} ss08;
+   
+	feature ss09 {
+		sub  s' s' zero' nine' by tag_ss09;
+} ss09;
+   
+	feature ss10 {
+		sub  s' s' one' zero' by tag_ss10;
+} ss10;
+   
+	feature ss11 {
+		sub  s' s' one' one' by tag_ss11;
+} ss11;
+   
+	feature ss12 {
+		sub  s' s' one' two' by tag_ss12;
+} ss12;
+   
+	feature ss13 {
+		sub  s' s' one' three' by tag_ss13;
+} ss13;
+   
+	feature ss14 {
+		sub  s' s' one' four' by tag_ss14;
+} ss14;
+   
+	feature ss15 {
+		sub  s' s' one' five' by tag_ss15;
+} ss15;
+   
+	feature ss16 {
+		sub  s' s' one' six' by tag_ss16;
+} ss16;
+   
+	feature ss17 {
+		sub  s' s' one' seven' by tag_ss17;
+} ss17;
+   
+	feature ss18 {
+		sub  s' s' one' eight' by tag_ss18;
+} ss18;
+   
+	feature ss19 {
+		sub  s' s' one' nine' by tag_ss19;
+} ss19;
+   
+	feature ss20 {
+		sub  s' s' two' zero' by tag_ss20;
+} ss20;
+   
+	feature tjmo {
+		sub  t' j' m' o' by tag_tjmo;
+} tjmo;
+   
+	feature tnam {
+		sub  t' n' a' m' by tag_tnam;
+} tnam;
+   
+	feature trad {
+		sub  t' r' a' d' by tag_trad;
+} trad;
+   
+	feature twid {
+		sub  t' w' i' d' by tag_twid;
+} twid;
+   
+	feature valt {
+		sub  v' a' l' t' by tag_valt;
+} valt;
+   
+	feature vatu {
+		sub  v' a' t' u' by tag_vatu;
+} vatu;
+   
+	feature vert {
+		sub  v' e' r' t' by tag_vert;
+} vert;
+   
+	feature vhal {
+		sub  v' h' a' l' by tag_vhal;
+} vhal;
+   
+	feature vjmo {
+		sub  v' j' m' o' by tag_vjmo;
+} vjmo;
+   
+	feature vkna {
+		sub  v' k' n' a' by tag_vkna;
+} vkna;
+   
+	feature vkrn {
+		sub  v' k' r' n' by tag_vkrn;
+} vkrn;
+   
+	feature vpal {
+		sub  v' p' a' l' by tag_vpal;
+} vpal;
+   
+	feature vrt2 {
+		sub  v' r' t' two' by tag_vrt2;
+} vrt2;
