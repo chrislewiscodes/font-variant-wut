@@ -16,7 +16,7 @@ class FontVariantWut {
 
     public $tests = array(
         "font-variant-alternates" => array(
-            'values' => array('normal', 'historical-forms', 'stylistic(test)', 'styleset(test)', 'character-variant(test)', 'swash(test)', 'ornaments(test)', 'annotation(test)'),
+            'values' => array('normal', 'historical-forms', 'stylistic(test)', 'styleset(test)', 'character-variant(test)', 'swash(t1st)', 'swash(t2st)', 'ornaments(test)', 'annotation(test)'),
             'features' => '.alt|ss\d\d|cv\d\d|swsh|cswh|hist|ornm',
         ),
         "font-variant-caps" => array(
@@ -60,7 +60,7 @@ class FontVariantWut {
             @stylistic { test: 1 } 
             @styleset { test: 1 } 
             @character-variant { test: 1 } 
-            @swash { test: 1 } 
+            @swash { t1st: 1; t2st: 2 } 
             @ornaments { test: 1 } 
             @annotation { test: 1 } 
         }
