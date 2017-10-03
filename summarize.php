@@ -35,27 +35,28 @@ $columns = null;
 while ($line = fgets($rfh)) {
     if (!$columns) {
         $columns = explode(',', trim($line));
-    } else {
-        $row = array();
-        $inquote = false;
-        $compile = "";
-        $i=0;
-        foreach (explode(',', trim($line)) as $v) {
-            $qstart = ($v && $v[0]==='"');
-            $qend = (substr($v, -1) === '"' && substr($v, -2, 1) !== '"');
-            if (!$inquote) {
-                if (!($qstart xor $qend)) {
-                    $row[$columns[$i++]] = uncsv($v);
-                } else {
-                    $compile = $v;
-                    $inquote = true;
-                }
+        continue;
+    }
+
+    $row = array();
+    $inquote = false;
+    $compile = "";
+    $i=0;
+    foreach (explode(',', trim($line)) as $v) {
+        $qstart = ($v && $v[0]==='"');
+        $qend = (substr($v, -1) === '"' && substr($v, -2, 1) !== '"');
+        if (!$inquote) {
+            if (!($qstart xor $qend)) {
+                $row[$columns[$i++]] = uncsv($v);
             } else {
-                $compile .= ",$v";
-                if ($qend) {
-                    $row[$columns[$i++]] = uncsv($compile);
-                    $inquote = false;
-                }
+                $compile = $v;
+                $inquote = true;
+            }
+        } else {
+            $compile .= ",$v";
+            if ($qend) {
+                $row[$columns[$i++]] = uncsv($compile);
+                $inquote = false;
             }
         }
     }
@@ -75,12 +76,21 @@ while ($line = fgets($rfh)) {
             break;
     }
     
+    switch ($row['Browser']) {
+        case 'Facebook': case 'Twitter': case 'Weibo':
+            continue 2; //these will always be some version of an real browser
+            
+        case 'Unknown':
+            continue 2; //not much we can do about this
+    }
+    
     if (!isset($summary[$key])) {
         foreach ($tester->tests as $rule => $info) {
             if (!isset($row[$rule])) continue;
             $status = firstword($row[$rule]);
             $summary[$key][$rule] = array(
                 'latestReport' => $row['Report date'],
+                'latestVersion' => $row['Version'],
                 'currentSupport' => $status,
             );
             switch ($status) {
@@ -98,19 +108,27 @@ while ($line = fgets($rfh)) {
         if (!isset($row[$rule])) continue;
         $status = firstword($row[$rule]);
         $summary[$key][$rule]['latestReport'] = max($summary[$key][$rule]['latestReport'], $row['Report date']);
+        $summary[$key][$rule]['latestVersion'] = max($row['Version'], $summary[$key][$rule]['latestVersion']);
         switch ($status) {
             case 'pass':
-                $summary[$key][$rule]['firstPass'] = min($summary[$key][$rule]['firstPass'], $row['Version']);
+                if ($row['Version']) {
+                    $summary[$key][$rule]['firstPass'] = isset($summary[$key][$rule]['firstPass']) ? min($summary[$key][$rule]['firstPass'], $row['Version']) : $row['Version'];
+                }
                 $summary[$key][$rule]['currentSupport'] = 'pass';
                 break;
             case 'partial':
-                $summary[$key][$rule]['firstPartial'] = min($summary[$key][$rule]['firstPartial'], $row['Version']);
-                if ($summary[$key][$rule]['currentSupport'] !== 'pass') {
+                if ($row['Version']) {
+                    $summary[$key][$rule]['firstPartial'] = isset($summary[$key][$rule]['firstPartial']) ? min($summary[$key][$rule]['firstPartial'], $row['Version']) : $row['Version'];
+                }
+                if ($summary[$key][$rule]['currentSupport'] === 'fail') {
                     $summary[$key][$rule]['currentSupport'] = 'partial';
                 }
+                break;
+            case 'fail':
+                $summary[$key][$rule]['firstFail'] = isset($summary[$key][$rule]['firstFail']) ? min($summary[$key][$rule]['firstFail'], $row['Version']) : $row['Version'];
                 break;
         }
     }
 }
 
-var_dump($summary);
+print json_encode($summary, JSON_PRETTY_PRINT);

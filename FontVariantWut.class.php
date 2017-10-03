@@ -128,30 +128,34 @@ EOF;
             $b = "Internet Explorer";
             $v = $m[1];
         } else {
-            foreach (explode('|', 'CriOS|Edge|Firefox|Chrome|Chromium|Safari|OPR|Opera') as $try) {
+            foreach (explode('|', 'FBAV|Weibo|CriOS|Edge|Firefox|Thunderbird|Chrome|Chromium|Safari|OPR|Opera') as $try) {
                 if (preg_match('~' . $try . '/(\d+(?:\.\d+))~', $ua, $m)) {
                     $b = $try;
                     $v = $m[1];
                     switch ($b) {
                         case 'OPR': $b = 'Opera'; break;
                         case 'CriOS': $p = "iOS"; $b = 'Chrome'; break;
-                        case 'Safari':
+                        case 'FBAV': $b = 'Facebook'; break;
                     }
                     break;
                 }
             }
         }
 
-        if (preg_match(':Version/([\d\.]+):', $ua, $m)) {
+        if ($b === 'Safari' and preg_match(':Version/([\d\.]+):', $ua, $m)) {
             $v = $m[1];
         }
         
         if ($p === "Unknown") {
-            if (preg_match('/Android/', $ua)) {
+            if (preg_match('/Windows Phone/', $ua)) {
+                $p = 'Windows Phone';
+            } else if (preg_match('/Android/', $ua)) {
                 $p = 'Android';
-            } else if (preg_match('/Windows NT/', $ua)) {
+            } else if (preg_match('/CrOS/', $ua)) {
+                $p = 'Chrome OS';
+            } else if (preg_match('/Windows/', $ua)) {
                 $p = 'Windows';
-            } else if (preg_match('/iPhone OS \d+/', $ua)) {
+            } else if (preg_match('/iPad|iPhone OS/', $ua)) {
                 $p = 'iOS';
             } else if (preg_match('/Mac OS X/', $ua)) {
                 $p = 'Mac';
@@ -159,6 +163,10 @@ EOF;
                 $p = 'Linux';
             };
         }
+        
+        if ($p === 'Android' and $b === 'Safari') {
+            $b = 'Browser';
+        };
         
         return array(
             'platform' => $p, 
