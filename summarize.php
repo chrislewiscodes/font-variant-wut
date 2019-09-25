@@ -30,7 +30,6 @@ function firstword($v) {
     return $words[0];
 }
 
-
 $columns = null;
 while ($line = fgets($rfh)) {
     if (!$columns) {
@@ -43,6 +42,10 @@ while ($line = fgets($rfh)) {
     $compile = "";
     $i=0;
     foreach (explode(',', trim($line)) as $v) {
+        //throw out invalid rows
+        if (!isset($columns[$i])) {
+            continue 2;
+        }
         $qstart = ($v && $v[0]==='"');
         $qend = (substr($v, -1) === '"' && substr($v, -2, 1) !== '"');
         if (!$inquote) {
@@ -60,7 +63,7 @@ while ($line = fgets($rfh)) {
             }
         }
     }
-    
+
     $key = null;
     switch($row['Platform']) {
         case 'iOS':
@@ -131,4 +134,5 @@ while ($line = fgets($rfh)) {
     }
 }
 
+header("Content-type: application/json; charset=utf-8");
 print json_encode($summary, JSON_PRETTY_PRINT);

@@ -15,7 +15,7 @@ require_once("./FontVariantWut.class.php");
 $tester = new FontVariantWut();
 
 $summary = null;
-if (file_exists('summary.json')) {
+if (false and file_exists('summary.json')) {
     $summary = json_decode(file_get_contents('summary.json'), true);
 } else {
     $summary = json_decode(`php summarize.php`, true);
